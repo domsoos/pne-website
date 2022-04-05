@@ -1,5 +1,5 @@
-## CS350 - Project Reports
+# CS350 - Project Reports
 
-# Team E3
-* [Tests](./tests/test/)
-* [JavaDoc](./javadoc/)
+`Team E3`
+* [Tests](./reports/tests/test/)
+* [JavaDoc](./reports/javadoc/)
