@@ -92,9 +92,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">C</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#checkForArticleObjects(java.lang.String,java.lang.StringBuilder)">checkForArticleObjects(String, StringBuilder)</a></span> - Method in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">In the string, If the capture word has an article word 
+  such as "a", "an", "the" before it, return true</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#checkForPersonalNames(java.util.List)">checkForPersonalNames(List&lt;String&gt;)</a></span> - Method in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Check if a token list contains one of the personal names 
+  If true, return a true boolean</div>
+</dd>
 </dl>
 <a id="I:E">
 <!--   -->
@@ -108,7 +114,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">An Extractor that scans the file</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#%3Cinit%3E(java.io.File)">Extractor(File)</a></span> - Constructor for class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Default Constructor</div>
+</dd>
 </dl>
 <a id="I:G">
 <!--   -->
@@ -175,7 +183,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Application.html#main(java.lang.String%5B%5D)">main(String[])</a></span> - Static method in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Application.html" title="class in edu.odu.cs.cs350.pne">Application</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#markPersonalNames(java.lang.String)">markPersonalNames(String)</a></span> - Method in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Mark all personal names within a block of text.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#myFile">myFile</a></span> - Variable in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -203,7 +213,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">S</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#scanFile()">scanFile()</a></span> - Method in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">scans .txt file 
+  For System test scan .txt file and feed string into NER tag checker
+  If true, there is tags feed into get text without tags and feed into textToToken
+  Next check if the tokenList contains any of the personal names
+  If true, covert the tokenList into a string and pass it to the markPersonalNames()
+  Print the results</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Extractor.html#scanner">scanner</a></span> - Variable in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Extractor.html" title="class in edu.odu.cs.cs350.pne">Extractor</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/pne/Trainer.html#setPersonalNameData(java.util.List)">setPersonalNameData(List&lt;String&gt;)</a></span> - Method in class edu.odu.cs.cs350.pne.<a href="edu/odu/cs/cs350/pne/Trainer.html" title="class in edu.odu.cs.cs350.pne">Trainer</a></dt>

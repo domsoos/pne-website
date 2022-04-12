@@ -171,7 +171,9 @@ extends java.lang.Object</pre>
 <tbody>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File)">Extractor</a></span>&#8203;(java.io.File&nbsp;fileObj)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Default Constructor</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -200,22 +202,37 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkForArticleObjects(java.lang.String,java.lang.StringBuilder)">checkForArticleObjects</a></span>&#8203;(java.lang.String&nbsp;word,
                       java.lang.StringBuilder&nbsp;str)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">In the string, If the capture word has an article word 
+  such as "a", "an", "the" before it, return true</div>
+</td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkForPersonalNames(java.util.List)">checkForPersonalNames</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;list)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Check if a token list contains one of the personal names 
+  If true, return a true boolean</div>
+</td>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#markPersonalNames(java.lang.String)">markPersonalNames</a></span>&#8203;(java.lang.String&nbsp;src)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Mark all personal names within a block of text.</div>
+</td>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scanFile()">scanFile</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">scans .txt file 
+  For System test scan .txt file and feed string into NER tag checker
+  If true, there is tags feed into get text without tags and feed into textToToken
+  Next check if the tokenList contains any of the personal names
+  If true, covert the tokenList into a string and pass it to the markPersonalNames()
+  Print the results</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -279,6 +296,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>Extractor</h4>
 <pre>public&nbsp;Extractor&#8203;(java.io.File&nbsp;fileObj)</pre>
+<div class="block">Default Constructor</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fileObj</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -299,6 +321,12 @@ extends java.lang.Object</pre>
 <h4>scanFile</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;scanFile()
               throws java.io.IOException</pre>
+<div class="block">scans .txt file 
+  For System test scan .txt file and feed string into NER tag checker
+  If true, there is tags feed into get text without tags and feed into textToToken
+  Next check if the tokenList contains any of the personal names
+  If true, covert the tokenList into a string and pass it to the markPersonalNames()
+  Print the results</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -312,6 +340,8 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>checkForPersonalNames</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;checkForPersonalNames&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;list)</pre>
+<div class="block">Check if a token list contains one of the personal names 
+  If true, return a true boolean</div>
 </li>
 </ul>
 <a id="markPersonalNames(java.lang.String)">
@@ -321,6 +351,9 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>markPersonalNames</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;markPersonalNames&#8203;(java.lang.String&nbsp;src)</pre>
+<div class="block">Mark all personal names within a block of text.
+  return the same block of text with PER tags
+  surrounding any personal names found within that text.</div>
 </li>
 </ul>
 <a id="checkForArticleObjects(java.lang.String,java.lang.StringBuilder)">
@@ -331,6 +364,8 @@ extends java.lang.Object</pre>
 <h4>checkForArticleObjects</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;checkForArticleObjects&#8203;(java.lang.String&nbsp;word,
                                       java.lang.StringBuilder&nbsp;str)</pre>
+<div class="block">In the string, If the capture word has an article word 
+  such as "a", "an", "the" before it, return true</div>
 </li>
 </ul>
 </li>
