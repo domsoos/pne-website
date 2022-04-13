@@ -2,5 +2,5 @@
 
 # Team E3
 * [Tests](./tests/test/)
-* [Reports](./tests/tests.csv)
+* [Reports](./tests/index.html)
 * [JavaDoc](./javadoc/)
