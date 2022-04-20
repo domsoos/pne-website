@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-04-16T08:26:32.340">
+<file name="/Users/zeus/Documents/GitHub/cs350-pne-domsoos/pne/src/main/java/edu/odu/cs/cs350/pne/Extractor.java">
+<violation beginline="15" endline="15" begincolumn="17" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" variable="myFile" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" variable="scanner" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="15" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" variable="newLib" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="14" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" variable="newFea" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="50" endline="50" begincolumn="30" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="scanFile" variable="posString" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'posString' (lines '50'-'50').
+</violation>
+<violation beginline="50" endline="73" begincolumn="30" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="scanFile" variable="posString" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'posString' (lines '50'-'73').
+</violation>
+<violation beginline="82" endline="91" begincolumn="22" endcolumn="73" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="checkForPersonalNames" variable="nameList" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nameList' (lines '82'-'91').
+</violation>
+<violation beginline="100" endline="128" begincolumn="16" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="markPersonalNames" variable="startingTag" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'startingTag' (lines '100'-'128').
+</violation>
+<violation beginline="101" endline="128" begincolumn="16" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="markPersonalNames" variable="endingTag" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'endingTag' (lines '101'-'128').
+</violation>
+<violation beginline="104" endline="128" begincolumn="17" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="markPersonalNames" variable="matcher" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'matcher' (lines '104'-'128').
+</violation>
+<violation beginline="136" endline="150" begincolumn="22" endcolumn="79" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="checkForArticleObjects" variable="articleList" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'articleList' (lines '136'-'150').
+</violation>
+<violation beginline="140" endline="145" begincolumn="17" endcolumn="37" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Extractor" method="checkForArticleObjects" variable="hasArticleWord" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'hasArticleWord' (lines '140'-'145').
+</violation>
+</file>
+<file name="/Users/zeus/Documents/GitHub/cs350-pne-domsoos/pne/src/main/java/edu/odu/cs/cs350/pne/Librarian.java">
+<violation beginline="16" endline="16" begincolumn="12" endcolumn="15" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Librarian" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="16" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Librarian" variable="names" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="18" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Librarian" variable="tokenList" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="12" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Librarian" variable="startingTag" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="12" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Librarian" variable="endingTag" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+<file name="/Users/zeus/Documents/GitHub/cs350-pne-domsoos/pne/src/main/java/edu/odu/cs/cs350/pne/Name.java">
+<violation beginline="7" endline="7" begincolumn="20" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Name" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="7" endline="7" begincolumn="13" endcolumn="24" rule="AvoidFieldNameMatchingTypeName" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Name" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidfieldnamematchingtypename" priority="3">
+It is somewhat confusing to have a field name matching the declaring class name
+</violation>
+</file>
+<file name="/Users/zeus/Documents/GitHub/cs350-pne-domsoos/pne/src/main/java/edu/odu/cs/cs350/pne/Trainer.java">
+<violation beginline="19" endline="19" begincolumn="31" endcolumn="38" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Trainer" variable="attrInfo" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="28" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Trainer" variable="isNameAttr" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="16" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Trainer" variable="data" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="59" endline="68" begincolumn="3" endcolumn="27" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Trainer" method="createDataInstance" variable="newInstance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'newInstance' (lines '59'-'68').
+</violation>
+</file>
+</pmd>
